@@ -1,12 +1,1218 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>test Page</h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="baidu-site-verification" content="code-MV1YEr6BYn" />
+    <meta
+      name="360-site-verification"
+      content="e19da6759ce990ebbbc75e8dcad7fe8c"
+    />
+    <title>会写代码的咸鱼-五华阿哥-陈广安个人网站-陈广安个人博客</title>
+    <meta
+      name="keywords"
+      content="安安 mrchenanan@163.com mrchenanan  梅州市 五华县 布头村 陈广安  PHP WEB 会写代码的咸鱼"
+    />
+    <meta
+      name="description"
+      content="陈广安-个人开发网站，是一个PHP开发交流平台，提供WEB开发案例分享、开发笔记分享、WEB开发工具下载"
+    />
+    <link rel="stylesheet" href="/static/plug_in/layui-v2.7.3/css/layui.css" />
+    <link rel="stylesheet" href="/static/plug_in/wow/animate.css" />
+    <link rel="stylesheet" href="/static/css/public.css" />
+    <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+    <style>
+      .c1 {
+        flex-wrap: wrap;
+        padding: 10px;
+      }
+
+      .c2 {
+        padding: 20px 20px 0 20px;
+      }
+
+      .c3 {
+        padding: 20px;
+      }
+
+      .c3 img {
+        width: 44px;
+        height: 44px;
+        border-radius: 44px;
+        margin: 6px 2px;
+      }
+
+      .c4 {
+        align-items: flex-start;
+      }
+
+      .c5 {
+        flex: 1;
+      }
+
+      .c6 {
+        width: 340px;
+        padding: 0 20px;
+      }
+
+      .c6 .c2 {
+        margin-bottom: 20px;
+        padding: 20px 0 0;
+      }
+
+      .right-1 {
+        margin-top: 100px;
+        margin-bottom: 30px;
+        width: 300px;
+        height: 120px;
+      }
+
+      @keyframes move3 {
+        0% {
+          transform: rotateX(0deg) rotateY(0deg);
+        }
+
+        100% {
+          transform: rotateX(360deg) rotateY(360deg);
+        }
+      }
+
+      .right-1 .big-box {
+        perspective: 500px;
+        width: 266px;
+        height: 266px;
+        margin: 60px auto 0;
+      }
+
+      .right-1 .box {
+        margin: auto;
+        width: 32%;
+        height: 32%;
+        position: relative;
+        transform-style: preserve-3d;
+        /* transform:rotateX(-21deg) rotateY(-65deg);   */
+        animation: move3 30s infinite linear;
+      }
+
+      .right-1 .box > div {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: transform 0.2s ease-in;
+        border-radius: 8px;
+        overflow: hidden;
+        border: 1px solid #f2f2f2;
+      }
+
+      .right-1 .box img {
+        width: 100%;
+      }
+
+      .right-1 .wai-front {
+        transform: translateZ(43px);
+        text-align: center;
+      }
+
+      .right-1 .wai-back {
+        transform: translateZ(-43px) rotateY(180deg);
+        text-align: center;
+      }
+
+      .right-1 .wai-left {
+        transform: rotateY(-90deg) translateZ(43px);
+        text-align: center;
+      }
+
+      .right-1 .wai-right {
+        transform: rotateY(90deg) translateZ(43px);
+        text-align: center;
+      }
+
+      .right-1 .wai-top {
+        transform: rotateX(90deg) translateZ(43px);
+        text-align: center;
+      }
+
+      .right-1 .wai-bottom {
+        transform: rotateX(-90deg) translateZ(43px);
+        text-align: center;
+      }
+
+      .right-1 .box > span {
+        display: block;
+        border: 1px solid #000;
+        background: #999;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        width: 25%;
+        height: 25%;
+        color: #fff;
+        font: 14px;
+      }
+
+      .right-1 .nei-front {
+        transform: translateZ(15px);
+      }
+
+      .right-1 .nei-back {
+        transform: translateZ(-15px) rotateY(180deg);
+      }
+
+      .right-1 .nei-left {
+        transform: rotateY(-90deg) translateZ(15px);
+      }
+
+      .right-1 .nei-right {
+        transform: rotateY(90deg) translateZ(15px);
+      }
+
+      .right-1 .nei-top {
+        transform: rotateX(90deg) translateZ(15px);
+      }
+
+      .right-1 .nei-bottom {
+        transform: rotateX(-90deg) translateZ(15px);
+      }
+
+      .right-1 .big-box:hover .wai-front {
+        transform: translateZ(58px);
+      }
+
+      .right-1 .big-box:hover .wai-back {
+        transform: translateZ(-58px) rotateY(180deg);
+      }
+
+      .right-1 .big-box:hover .wai-left {
+        transform: rotateY(-90deg) translateZ(58px);
+      }
+
+      .right-1 .big-box:hover .wai-right {
+        transform: rotateY(90deg) translateZ(58px);
+      }
+
+      .right-1 .big-box:hover .wai-top {
+        transform: rotateX(90deg) translateZ(58px);
+      }
+
+      .right-1 .big-box:hover .wai-bottom {
+        transform: rotateX(-90deg) translateZ(58px);
+      }
+
+      /* .c16{display: none;padding:10px 20px;}
+.c16 .c25{justify-content: flex-end;}
+.c16 .c18{border-bottom:1px solid #f1f1f1;} */
+      .c17 {
+        color: #999;
+        line-height: 40px;
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .c18 {
+        background: #fff;
+        width: 100%;
+        margin: 8px auto;
+        position: relative;
+        padding: 10px;
+        padding-right: 0;
+      }
+
+      .c20 {
+        margin-bottom: 10px;
+        color: #333;
+        font-size: 16px;
+      }
+
+      .c21 {
+        color: #333;
+        align-items: flex-start;
+        font-size: 13px;
+      }
+
+      .c21 span {
+        margin-right: 5px;
+      }
+
+      /* .c22{margin-top: 6px;color: #333;}
+.c23{margin-right: 10px;text-align: center;}
+.c24{width: 44px;height: 44px;opacity: .8;z-index: 0;margin-right: 15px;}
+.c25{font-size: 28px;font-weight: bold;flex:1;text-align: center;}
+.c25 span{font-size: 14px;font-weight: normal;margin-right: 5px;}
+.c25 .c26{margin-left: 10px;}
+.c26{background: #faab34;color: #fff;padding:3px 5px;border-radius: 5px;}
+.c26.active{background: #fa3534;} */
+
+      .c27 {
+        padding: 20px;
+        border: 1px solid #f1f1f1;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        transition: all 0.3s;
+        box-sizing: border-box;
+      }
+
+      .c27:hover::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        backdrop-filter: blur(5px);
+        z-index: -1;
+        margin: -30px;
+      }
+
+      .c27:hover {
+        border: 1px solid var(--main-color);
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 2px 2px 8px 2px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+      }
+
+      .c27:hover a {
+        color: var(--main-color);
+      }
+
+      .c27:hover .c28 img {
+        box-shadow: 1px 1px 10px #999;
+      }
+
+      .c27 a.flex {
+        align-items: flex-start;
+      }
+
+      .c28 img {
+        width: 280px;
+      }
+
+      .c29 {
+        padding: 10px 30px;
+        box-sizing: border-box;
+      }
+
+      .c30 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .c31 {
+        margin: 20px auto;
+        line-height: 23px;
+      }
+
+      .c32 {
+        color: #666;
+      }
+
+      .c33 a {
+        border-bottom: 1px solid var(--main-color);
+        margin-right: 15px;
+        display: inline-block;
+        padding: 0 5px 2px;
+        margin-bottom: 15px;
+        font-size: 15px;
+        border-radius: 3px;
+      }
+
+      .c33 a:hover {
+        color: var(--main-color);
+      }
+
+      .c34 a {
+        border-bottom: 1px solid #ccc;
+        display: block;
+        width: 100%;
+        padding: 0 5px 2px;
+        line-height: 26px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        border-radius: 3px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      .c34 a:hover {
+        color: var(--main-color);
+      }
+
+      @media screen and (max-width: 1440px) {
+        .c27 .c29 {
+          padding: 10px 0 10px 15px;
+        }
+
+        .c28 img {
+          width: 230px;
+        }
+
+        .c30 {
+          font-size: 16px;
+          font-weight: normal;
+        }
+
+        .c31 {
+          margin: 10px auto;
+        }
+      }
+
+      @media screen and (max-width: 960px) {
+        .c2 {
+          padding-top: 0;
+        }
+
+        .c3 {
+          margin-bottom: 50px;
+        }
+
+        .c27 .flex {
+          display: block;
+        }
+
+        .c27 .c29 {
+          padding: 10px 0;
+        }
+
+        .c28 img {
+          width: 100%;
+        }
+
+        .c29 {
+          padding: 10px;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        .c4.flex {
+          display: block;
+        }
+
+        .c6 {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 加载层 -->
+    <div class="preloader">
+      <span class="preloader-spin"></span>
+    </div>
+    <div class="left">
+      <div class="l2">
+        <div class="wow tada">
+          <div class="l3">
+            <a href="/"><i class="iconfont">&#xe60c;</i></a>
+          </div>
+        </div>
+        <div>
+          <a href="/" class="l4 wow bounceInLeft" data-wow-delay=".1s">首页</a>
+          <a
+            href="/index/index/notes.html?page=1&type=0"
+            class="l4 wow bounceInLeft"
+            data-wow-delay=".2s"
+            >笔记</a
+          >
+          <a
+            href="/index/shop/index.html"
+            class="l4 wow bounceInLeft"
+            data-wow-delay=".3s"
+            >商城</a
+          >
+          <a
+            href="/index/index/news.html"
+            class="l4 wow bounceInLeft"
+            data-wow-delay=".4s"
+            >资讯</a
+          >
+          <a
+            href="/index/index/liuyan.html"
+            class="l4 wow bounceInLeft"
+            data-wow-delay=".5s"
+            >留言</a
+          >
+        </div>
+        <div class="l5 flex">
+          <div
+            class="wow bounceInUp"
+            data-img="/static/img/ewm_weixin.jpg"
+            data-wow-delay=".5s"
+            title="加站长微信"
+          >
+            <i class="iconfont">&#xe695;</i>
+          </div>
+          <div
+            class="wow bounceInUp"
+            data-img="http://qiniu.other.88an.top/other/2022805165966688652291.jpg"
+            data-wow-delay="1s"
+            title="微信小程序"
+          >
+            <i class="iconfont">&#xe73f;</i>
+          </div>
+          <div
+            class="wow bounceInUp"
+            data-img="/static/img/12752dfd5c5d0db03be0e26bca327042.png"
+            data-wow-delay="1.5s"
+            title="下载安卓APP"
+          >
+            <i class="iconfont">&#xe6f0;</i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="r4">
+        <div class="stars">
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+          <div class="star"></div>
+        </div>
+        <ul class="r2" id="scroll-msg">
+          <li>这么酷的网站，搜索引擎竟然不收录！你们会后悔的~</li>
+          <li>本来想要打造一个最炫酷的网站。结果变成了一个缝合怪....</li>
+          <li>梦想还是要有的，万一实现了呢！</li>
+          <li>本站点做了响应式的哦，适配了电脑，平板，手机，缩小窗口试试！</li>
+        </ul>
+      </div>
+      <div class="r1 flex">
+        <div class="flex">
+          <div class="r5">
+            <input type="text" placeholder="搜索" v-model="" />
+          </div>
+          <div class="r6"><i class="layui-icon">&#xe615;</i></div>
+          <div class="r7">
+            热搜：
+            <a href="/index/Index/search.html?keyword=php">php</a>
+            <a href="/index/Index/search.html?keyword=vue">vue</a>
+            <a href="/index/Index/search.html?keyword=js">js</a>
+            <a href="/index/Index/search.html?keyword=ps">ps</a>
+          </div>
+        </div>
+        <div class="r8 flex">
+          <a href="/index/index/news_content.html?id=25">联系站长</a>
+          <a href="/index/member/index.html">个人中心</a>
+
+          <!-- <input type="color" id="color" defaultValue="#c00"> -->
+          <div id="color"></div>
+        </div>
+      </div>
+      <div class="r100">
+        <div class="c4 flex" id="vue">
+          <div class="c5">
+            <div class="c2">
+              <fieldset
+                class="layui-elem-field layui-field-title wow fadeInUp"
+                data-wow-delay=".3s"
+              >
+                <legend>专题 - 模块</legend>
+              </fieldset>
+            </div>
+
+            <div class="c29 wow fadeInUp">
+              <div class="c27">
+                <a
+                  href="http://www.88an.top/index/index/news_content.html?id=20"
+                  class="flex"
+                >
+                  <div class="c28">
+                    <img
+                      src="http://qiniu.other.88an.top/other/2022805165966235035448.jpg"
+                      alt="陈广安-会写代码的咸鱼"
+                    />
+                  </div>
+                  <div class="c29">
+                    <h2 class="c30">
+                      家谱功能小程序上线啦，微信小程序，头条小程序，抖音小程序均可以使用
+                    </h2>
+                    <div class="c31">
+                      家谱功能小程序上线啦，微信小程序，头条小程序，抖音小程序均可以使用
+                    </div>
+                    <div class="c32">创建时间:2022-08-05</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="c29 wow fadeInUp">
+              <div class="c27">
+                <a
+                  href="http://site.88an.top/vue.html"
+                  target="_blank"
+                  class="flex"
+                >
+                  <div class="c28">
+                    <img
+                      src="http://qiniu.other.88an.top/other/202281816608051274763.jpg"
+                      alt="陈广安-会写代码的咸鱼"
+                    />
+                  </div>
+                  <div class="c29">
+                    <h2 class="c30">后台管理系统，vue3框架，单页面应用</h2>
+                    <div class="c31">
+                      thinkphp6 + 牛之云存储 + vue3.2 + vite2 + element-plus +
+                      pinia,排版，UI，数据库表设计，后台模块设计，接口，等全部自己开发，功能有：导出execl表格，更换全局主题色，一键暗黑模式，多语言，图片管理，拖拽排序，图片裁剪，多端适配，高度封装页面组件，根据页面优化数据库字段，达到组件通用，表通用，可达到快速开发新模块
+                    </div>
+                    <div class="c32">创建时间:2022-07-28</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="c29 wow fadeInUp">
+              <div class="c27">
+                <a href="http://site.88an.top" target="_blank" class="flex">
+                  <div class="c28">
+                    <img
+                      src="http://qiniu.other.88an.top/news/2022721165839116144063.jpg"
+                      alt="陈广安-会写代码的咸鱼"
+                    />
+                  </div>
+                  <div class="c29">
+                    <h2 class="c30">通用企业站点模板</h2>
+                    <div class="c31">
+                      提供了常见的页面，有产品中心、新闻中心、关于我们、联系我们、团队介绍等等
+                    </div>
+                    <div class="c32">创建时间:2022-07-28</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="c29 wow fadeInUp">
+              <div class="c27">
+                <a
+                  href="http://site.88an.top/admin/index/index.html"
+                  target="_blank"
+                  class="flex"
+                >
+                  <div class="c28">
+                    <img
+                      src="http://qiniu.other.88an.top/news/2022721165839116144098.jpg"
+                      alt="陈广安-会写代码的咸鱼"
+                    />
+                  </div>
+                  <div class="c29">
+                    <h2 class="c30">后台管理系统，layui-iFrame版</h2>
+                    <div class="c31">
+                      采用后台ThinkPHP6框架，前端layui框架进行搭建的后台，提供了企业站点常见的功能，产品管理，新闻管理等等
+                    </div>
+                    <div class="c32">创建时间:2022-07-28</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="c29 wow fadeInUp">
+              <div class="c27">
+                <a href="index/page/uniapp" target="_blank" class="flex">
+                  <div class="c28">
+                    <img
+                      src="http://qiniu.other.88an.top/news/2022721165839116143834.jpg"
+                      alt="陈广安-会写代码的咸鱼"
+                    />
+                  </div>
+                  <div class="c29">
+                    <h2 class="c30">UNIAPP移动端跨平台应用</h2>
+                    <div class="c31">
+                      已经上线的平台有H5、微信小程序、头条小程序、安卓端
+                    </div>
+                    <div class="c32">创建时间:2022-07-28</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="c29 wow fadeInUp">
+              <div class="c27">
+                <a href="/old/index/index" target="_blank" class="flex">
+                  <div class="c28">
+                    <img
+                      src="http://qiniu.other.88an.top/news/202272116583911614391.jpg"
+                      alt="陈广安-会写代码的咸鱼"
+                    />
+                  </div>
+                  <div class="c29">
+                    <h2 class="c30">旧版网站入口</h2>
+                    <div class="c31">我的上一代版本个人站点</div>
+                    <div class="c32">创建时间:2022-07-28</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="c6">
+            <div class="c2">
+              <fieldset
+                class="layui-elem-field layui-field-title wow fadeInUp"
+                data-wow-delay=".3s"
+              >
+                <legend>开发 - 计划</legend>
+              </fieldset>
+            </div>
+            <div class="c34 wow fadeInUp">
+              <div><a href="#">后台上次登录时间错误</a></div>
+              <div><a href="#">企业站点新增主题颜色配置</a></div>
+              <div><a href="#">笔记，商城详情页面 样式重写</a></div>
+              <div><a href="#">后台多语言配置，优化多语言菜单配置</a></div>
+              <div><a href="#">完善uniapp项目商城</a></div>
+              <div><a href="#">小程序绑定账号，app登录/注册/找回密码</a></div>
+              <div><a href="#">h5族谱模块，首页新增族谱页面专题</a></div>
+              <div><a href="#">丰富后台配置组件</a></div>
+              <div><a href="#">使用vue3重构uniapp项目</a></div>
+            </div>
+            <div class="c2">
+              <fieldset
+                class="layui-elem-field layui-field-title wow fadeInUp"
+                data-wow-delay=".3s"
+              >
+                <legend>实验室 - 专题页面</legend>
+              </fieldset>
+            </div>
+            <div class="c33 wow fadeInUp">
+              <a href="index/page/wxeditor" target="_blank">模板编辑器</a>
+              <a href="/index/page/im">聊天室</a>
+              <a href="index/page/calendar" target="_blank">超级日历</a>
+              <a href="/index/page/flex" target="_blank">flex布局</a>
+              <a href="/index/page/css" target="_blank">css3</a>
+              <a href="/index/page/bill_list" target="_blank">账单</a>
+              <a href="/v.html" target="_blank">vue后台</a>
+              <a href="/index/page/fullpage" target="_blank">微场景H5+CSS3</a>
+              <a href="/index/page/promise" target="_blank">Promise的使用</a>
+              <a href="/index/page/fanyi" target="_blank">百度翻译</a>
+              <a href="/index/page/app" target="_blank">app下载</a>
+              <a href="/index/page/url" target="_blank">网址收藏夹</a>
+              <a href="http://www.qq.com" target="_blank">测试</a>
+              <a href="/index/page/form" target="_blank">表单提交</a>
+              <a href="/index/echarts/map?index=0">echarts用例</a>
+            </div>
+            <div class="c2">
+              <fieldset
+                class="layui-elem-field layui-field-title wow fadeInUp"
+                data-wow-delay=".3s"
+              >
+                <legend>近期 - 笔记</legend>
+              </fieldset>
+            </div>
+            <div class="c34 wow fadeInUp">
+              <div>
+                <a href="/index/index/notes_content.html?id=170"
+                  >thinkphp6，应用中间件的使用</a
+                >
+              </div>
+              <div>
+                <a href="/index/index/notes_content.html?id=169"
+                  >uniapp项目，微信小程序使用云函数</a
+                >
+              </div>
+              <div>
+                <a href="/index/index/notes_content.html?id=168"
+                  >thinkphp6限制某ip一定时间内请求次数(防恶意请求接口)</a
+                >
+              </div>
+              <div>
+                <a href="/index/index/notes_content.html?id=167"
+                  >php利用curl保存网络图片到到本地服务器</a
+                >
+              </div>
+              <div>
+                <a href="/index/index/notes_content.html?id=166"
+                  >后台系统配置，开发新组件流程</a
+                >
+              </div>
+              <div>
+                <a href="/index/index/notes_content.html?id=165"
+                  >解决一个页面中，组件多次调用触发回调，回调函数中加入索引</a
+                >
+              </div>
+            </div>
+
+            <div class="c2">
+              <fieldset
+                class="layui-elem-field layui-field-title wow fadeInUp"
+                data-wow-delay=".3s"
+              >
+                <legend>最近 - 访客</legend>
+              </fieldset>
+            </div>
+            <div class="c3">
+              <img
+                src="http://qiniu.other.88an.top/head/20221019174138_456.jpeg"
+                alt="陈广安-会写代码的咸鱼"
+                class="wow fadeInUp"
+                data-wow-delay="0.1s"
+                title=""
+              />
+              <img
+                src="http://qiniu.other.88an.top/head/20221019174037_404.jpeg"
+                alt="陈广安-会写代码的咸鱼"
+                class="wow fadeInUp"
+                data-wow-delay="0.2s"
+                title=""
+              />
+              <img
+                src="http://qiniu.other.88an.top/head/20221019173520_664.jpeg"
+                alt="陈广安-会写代码的咸鱼"
+                class="wow fadeInUp"
+                data-wow-delay="0.3s"
+                title=""
+              />
+              <img
+                src="http://qiniu.other.88an.top/head/20221019163306_866.jpeg"
+                alt="陈广安-会写代码的咸鱼"
+                class="wow fadeInUp"
+                data-wow-delay="0.4s"
+                title=""
+              />
+              <img
+                src="http://qiniu.other.88an.top/head/20221019163153_943.jpeg"
+                alt="陈广安-会写代码的咸鱼"
+                class="wow fadeInUp"
+                data-wow-delay="0.5s"
+                title=""
+              />
+              <img
+                src="http://qiniu.other.88an.top/head/20221019162553_513.jpeg"
+                alt="陈广安-会写代码的咸鱼"
+                class="wow fadeInUp"
+                data-wow-delay="0.6s"
+                title=""
+              />
+              <img
+                src="http://qiniu.other.88an.top/head/20220906113929_337.jpeg"
+                alt="陈广安-会写代码的咸鱼"
+                class="wow fadeInUp"
+                data-wow-delay="0.7s"
+                title=""
+              />
+              <img
+                src="http://qiniu.other.88an.top/head/20220905083613_205.jpeg"
+                alt="陈广安-会写代码的咸鱼"
+                class="wow fadeInUp"
+                data-wow-delay="0.8s"
+                title=""
+              />
+              <img
+                src="http://qiniu.other.88an.top/head/20220903163022_869.jpeg"
+                alt="陈广安-会写代码的咸鱼"
+                class="wow fadeInUp"
+                data-wow-delay="0.9s"
+                title=""
+              />
+              <img
+                src="http://qiniu.other.88an.top/head/20220902231456_779.jpeg"
+                alt="陈广安-会写代码的咸鱼"
+                class="wow fadeInUp"
+                data-wow-delay="1s"
+                title=""
+              />
+              <img
+                src="http://qiniu.other.88an.top/head/20220902231138_767.jpeg"
+                alt="陈广安-会写代码的咸鱼"
+                class="wow fadeInUp"
+                data-wow-delay="1.1s"
+                title=""
+              />
+              <img
+                src="http://qiniu.other.88an.top/head/20220902225748_185.jpeg"
+                alt="陈广安-会写代码的咸鱼"
+                class="wow fadeInUp"
+                data-wow-delay="1.2s"
+                title=""
+              />
+              <img
+                src="http://qiniu.other.88an.top/head/20220902224201_466.jpeg"
+                alt="陈广安-会写代码的咸鱼"
+                class="wow fadeInUp"
+                data-wow-delay="1.3s"
+                title=""
+              />
+              <img
+                src="http://qiniu.other.88an.top/head/20220902224004_594.jpeg"
+                alt="陈广安-会写代码的咸鱼"
+                class="wow fadeInUp"
+                data-wow-delay="1.4s"
+                title=""
+              />
+              <img
+                src="http://qiniu.other.88an.top/head/20220902223920_728.jpeg"
+                alt="陈广安-会写代码的咸鱼"
+                class="wow fadeInUp"
+                data-wow-delay="1.5s"
+                title=""
+              />
+            </div>
+
+            <div class="right-1">
+              <div class="big-box">
+                <div class="box">
+                  <div class="wai-top">
+                    <img src="/static/img/2.jpg" alt="陈广安" />
+                  </div>
+                  <div class="wai-bottom">
+                    <img src="/static/img/app.png" alt="陈广安" />
+                  </div>
+                  <div class="wai-left">
+                    <img
+                      src="/static/img/12752dfd5c5d0db03be0e26bca327042.png"
+                      alt="陈广安"
+                    />
+                  </div>
+                  <div class="wai-right">
+                    <img src="/static/img/touxiang.jpg" alt="陈广安" />
+                  </div>
+                  <div class="wai-front">
+                    <img src="/static/img/wx_me_ewm.png" alt="陈广安" />
+                  </div>
+                  <div class="wai-back">
+                    <img src="/static/img/site.png" alt="陈广安" />
+                  </div>
+                  <span class="nei-top">上</span>
+                  <span class="nei-bottom">下</span>
+                  <span class="nei-left">左</span>
+                  <span class="nei-right">右</span>
+                  <span class="nei-front">前</span>
+                  <span class="nei-back">后</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="r8" id="search" style="display: none">
+        <div class="r9">
+          <fieldset
+            class="layui-elem-field layui-field-title wow fadeInUp"
+            data-wow-delay=".5s"
+          >
+            <legend>搜索 - 页面</legend>
+          </fieldset>
+        </div>
+        <div class="r10">
+          <div class="r11">搜索</div>
+        </div>
+      </div>
+
+      <div class="bottom-nav">
+        <div class="box-2 cle">
+          <a href="/" class="box-3 wow bounceInUp">
+            <div class="box-4"><i class="iconfont">&#xe607;</i></div>
+            <div class="box-5">首页</div>
+          </a>
+          <a
+            href="/index/index/notes.html?page=1&type=0"
+            class="box-3 wow bounceInUp"
+            data-wow-delay=".2s"
+          >
+            <div class="box-4"><i class="iconfont">&#xe61d;</i></div>
+            <div class="box-5">笔记</div>
+          </a>
+          <a
+            href="/index/index/liuyan.html"
+            class="box-3 wow bounceInUp"
+            data-wow-delay=".3s"
+          >
+            <div class="box-4"><i class="iconfont">&#xe6f7;</i></div>
+            <div class="box-5">留言</div>
+          </a>
+          <a
+            href="/index/shop/index.html"
+            class="box-3 wow bounceInUp"
+            data-wow-delay=".1s"
+          >
+            <div class="box-4"><i class="iconfont">&#xe633;</i></div>
+            <div class="box-5">商城</div>
+          </a>
+          <a
+            href="/index/index/more.html"
+            class="box-3 wow bounceInUp"
+            data-wow-delay=".4s"
+          >
+            <div class="box-4"><i class="iconfont">&#xe638;</i></div>
+            <div class="box-5">更多</div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-bottom">
+      <div class="right-bottom-1">
+        <a href="https://beian.miit.gov.cn/" target="_blank"
+          >冀ICP备16027619号</a
+        >
+      </div>
+      <div class="right-bottom-2">
+        友情链接：
+        <a href="https://www.baidu.com" target="_blank">百度一下</a>
+
+        <a href="">加微:13128138787</a>
+      </div>
+    </div>
+
+    <div class="layer-img" style="padding: 10px">
+      <img src="" alt="" style="width: 300px; height: 300px; display: block" />
+    </div>
+    <script
+      type="text/javascript"
+      src="/static/plug_in/jquery-1.9.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/static/plug_in/layui-v2.7.3/layui.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/static/plug_in/vue/vue.min.js"
+    ></script>
+    <script type="text/javascript" src="/static/plug_in/wow/wow.js"></script>
+    <script>
+      function Scroll() {}
+
+      Scroll.prototype.upScroll = function (dom, _h, interval) {
+        var dom = document.getElementById(dom);
+        var timer = setTimeout(function () {
+          var _field = dom.firstElementChild;
+          _field.style.marginTop = _h;
+          clearTimeout(timer);
+        }, 1000);
+        setInterval(function () {
+          var _field = dom.firstElementChild;
+          _field.style.marginTop = "0px";
+          dom.appendChild(_field);
+          var _field = dom.firstElementChild;
+          _field.style.marginTop = _h;
+        }, interval);
+      };
+
+      var myScroll = new Scroll();
+      myScroll.upScroll("scroll-msg", "-40px", 5000);
+
+      var layer;
+      layui.use(["element", "layer", "util", "colorpicker"], function () {
+        var element = layui.element;
+        layer = layui.layer;
+        var util = layui.util;
+        var colorpicker = layui.colorpicker;
+        util.fixbar({
+          css: { right: 20, bottom: 80 },
+        });
+
+        //颜色组件
+        colorpicker.render({
+          elem: "#color",
+          color: color,
+          format: "rgb",
+          predefine: true, // 开启预定义颜色
+          colors: ["#006A90", "#FF5722", "#1E9FFF"], //自定义预定义颜色项
+          done: function (color) {
+            localStorage.setItem("siteColor", color);
+            el.style.setProperty(`--main-color`, color);
+            getRgbaColor(color);
+          },
+        });
+      });
+
+      //切换主题色
+      let color = localStorage.getItem("siteColor") || "rgb(0, 106, 144)";
+      let el = document.documentElement;
+      el.style.setProperty(`--main-color`, color);
+
+      const pre = "--el-color-primary";
+      el.style.setProperty(pre, color);
+      getRgbaColor(color);
+
+      //处理rbg格式数据转成数组
+      function getRgbaColor(color) {
+        let arr = color.match(/\((.+?)\)/g)[0];
+        arr = arr.substr(1, arr.length - 2).split(",");
+        el.style.setProperty(
+          `--main-color-1`,
+          `rgba(${arr[0]},${arr[1]},${arr[2]},.6)`
+        );
+
+        let num = 10;
+        for (let i = 1; i < num; i += 1) {
+          el.style.setProperty(
+            `${pre}-light-${i}`,
+            `rgba(${arr[0]},${arr[1]},${arr[2]},.${i})`
+          );
+        }
+      }
+
+      $(function () {
+        if (!/msie [6|7|8|9]/i.test(navigator.userAgent)) {
+          new WOW().init();
+        }
+
+        //自动推送工具代码
+        var bp = document.createElement("script");
+        var curProtocol = window.location.protocol.split(":")[0];
+        if (curProtocol === "https") {
+          bp.src = "https://zz.bdstatic.com/linksubmit/push.js";
+        } else {
+          bp.src = "http://push.zhanzhang.baidu.com/push.js";
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+        //自动推送工具代码
+
+        L2Dwidget.init({
+          model: {
+            jsonPath:
+              "https://unpkg.com/live2d-widget-model-wanko@1.0.5/assets/wanko.model.json",
+            scale: 1,
+          },
+          display: {
+            position: "left",
+            width: 150,
+            height: 300,
+            hOffset: -10,
+            vOffset: -140,
+          },
+          mobile: {
+            show: true,
+            scale: 0.5,
+          },
+          react: {
+            opacityDefault: 0.7,
+            opacityOnHover: 0.2,
+          },
+        });
+      });
+
+      $(window).resize(function () {
+        var width = $(this).width();
+        if (width > 1400) {
+        } else {
+        }
+      });
+
+      // $('.r4').click(function(){
+      //     location.href="/index/me?type=1"
+      // })
+
+      //移入提示
+      $(".l5 > div").hover(
+        function () {
+          color = localStorage.getItem("siteColor") || "#006A90";
+          var that = this;
+          layer.tips($(that).attr("title"), that, {
+            tips: [1, color], //还可配置颜色
+          });
+        },
+        function () {
+          layer.closeAll("tips");
+        }
+      );
+
+      //弹出二维码
+      $(".l5 > div").click(function () {
+        $(".layer-img img").attr("src", $(this).data("img"));
+        layer.open({
+          type: 1,
+          title: false,
+          closeBtn: 0,
+          area: ["auto"],
+          shadeClose: true,
+          content: $(".layer-img"),
+        });
+      });
+
+      new Vue({
+        el: "#search",
+      });
+
+      //点击搜索
+      $(".r6").click(function () {
+        var content = $(".r5 input").val();
+        if (content != "") {
+          location.href = "/index/Index/search.html?keyword=" + content;
+        } else {
+          layer.tips("请输入需要搜索的关键词", ".r5", { tips: [3, "#006A90"] });
+          $(".r5 input").focus();
+        }
+      });
+
+      $(document).keyup(function (event) {
+        if (event.keyCode == 13) {
+          var content = $(".r5 input").val();
+          if (content != "") {
+            location.href = "/index/Index/search.html?keyword=" + content;
+          } else {
+            layer.tips("请输入需要搜索的关键词", ".r5", {
+              tips: [3, "#006A90"],
+            });
+            $(".r5 input").focus();
+          }
+        }
+      });
+
+      function loadWeb() {
+        if ($(".preloader").length) {
+          $(".preloader").fadeOut(1000);
+        }
+      }
+      $(document).ready(loadWeb());
+      $(window).on("load", loadWeb());
+    </script>
+    <script>
+      setTimeout(() => {
+        loadWeb();
+      }, 3000);
+
+      $(".l4").eq(0).addClass("active");
+
+      $(".bottom-nav .box-3").eq(0).addClass("active");
+      /* Demo purposes only */
+      $(".hover").mouseleave(function () {
+        $(this).removeClass("hover");
+      });
+    </script>
+  </body>
 </html>
